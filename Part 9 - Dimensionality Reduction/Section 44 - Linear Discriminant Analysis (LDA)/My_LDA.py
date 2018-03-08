@@ -21,7 +21,7 @@ sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 
-#Applying PCA
+#Applying LDA
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 lda = LDA(n_components = 2)
 X_train = lda.fit_transform(X_train, Y_train)
